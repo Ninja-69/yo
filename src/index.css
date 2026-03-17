@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #e31c23;
+  --color-navy: #0F2A44;
+  --color-background-light: #f8f6f6;
+  --color-background-dark: #211112;
+  --font-display: "Montserrat", sans-serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer utilities {
+  .diagonal-hero {
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+  }
+  @media (min-width: 1024px) {
+    .diagonal-hero {
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    }
+  }
+}
